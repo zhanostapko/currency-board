@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Button from "./Shared/Button";
 import Input from "./Shared/Input";
 import DeleteModal from "./DeleteModal";
+import Image from "next/image";
 
 type BalancesTableContentProps = {
   data?: BalanceItem[];
@@ -14,11 +15,10 @@ type BalancesTableContentProps = {
 
 const BalancesTableContent = ({
   data = [],
-  columns = 4,
   error,
   title,
 }: BalancesTableContentProps) => {
-  const [columnCount, setColumnCount] = useState(columns);
+  const [columnCount, setColumnCount] = useState(1);
   const [searchQuery, setSearchQuery] = useState("");
   const [balances, setBalances] = useState<BalanceItem[]>(data);
   const [showModal, setShowModal] = useState(false);
@@ -126,7 +126,12 @@ const BalancesTableContent = ({
                               onClick={() => showDeleteModal(currency)}
                               className="text-red-500 hover:text-red-700 transition"
                             >
-                              🗑
+                              <Image
+                                src="trashIcon.svg"
+                                alt="Delete"
+                                width="14"
+                                height="14"
+                              />
                             </button>
                           </td>
                         </React.Fragment>

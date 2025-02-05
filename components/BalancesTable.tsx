@@ -19,6 +19,7 @@ const BalancesTableContent = ({
   title,
 }: BalancesTableContentProps) => {
   const [columnCount, setColumnCount] = useState(1);
+  const [maxColumns, setMaxColumns] = useState(5);
   const [searchQuery, setSearchQuery] = useState("");
   const [balances, setBalances] = useState<BalanceItem[]>(data);
   const [showModal, setShowModal] = useState(false);
@@ -28,10 +29,19 @@ const BalancesTableContent = ({
     const handleResize = () => {
       const width = window.innerWidth;
 
-      if (width < 640) setColumnCount(1);
-      else if (width < 1024) setColumnCount(2);
-      else if (width < 1280) setColumnCount(3);
-      else setColumnCount(4);
+      if (width < 640) {
+        setColumnCount(1);
+        setMaxColumns(1);
+      } else if (width < 1024) {
+        setColumnCount(2);
+        setMaxColumns(3);
+      } else if (width < 1280) {
+        setColumnCount(3);
+        setMaxColumns(5);
+      } else {
+        setColumnCount(4);
+        setMaxColumns(5);
+      }
     };
 
     handleResize();
@@ -40,7 +50,8 @@ const BalancesTableContent = ({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const increment = () => setColumnCount((prev) => Math.min(5, prev + 1));
+  const increment = () =>
+    setColumnCount((prev) => Math.min(maxColumns, prev + 1));
   const decrement = () => setColumnCount((prev) => Math.max(1, prev - 1));
 
   const searchHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -92,7 +103,7 @@ const BalancesTableContent = ({
           <div className="flex gap-4">
             <Button
               className="px-5 py-2.5 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
-              disabled={columnCount >= 5 || !!error}
+              disabled={columnCount >= maxColumns || !!error}
               onClick={increment}
             >
               + Increase

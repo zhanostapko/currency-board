@@ -1,14 +1,10 @@
 import { currencyMap } from "@/data/currency";
 
 export async function GET() {
-  await new Promise((res) => setTimeout(res, 1500));
   try {
-    const response = await fetch(
-      "https://67862af6f80b78923aa5ace3.mockapi.io/api/v1/balance",
-      {
-        cache: "no-store",
-      }
-    );
+    const response = await fetch(process.env.API_ENDPOINT!, {
+      cache: "no-store",
+    });
 
     if (!response.ok) {
       return Response.json(

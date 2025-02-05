@@ -3,6 +3,7 @@ import { useActionState, useEffect, useState } from "react";
 import Input from "./Shared/Input";
 import { verifyOtpAction } from "@/app/actions/verifyOtp";
 import SubmitButton from "./SubmitButton";
+import Spinner from "./Spinner";
 
 type OTPFormProps = { email: string | null; otpCode: number | null };
 
@@ -39,10 +40,12 @@ const OTPForm = ({ email, otpCode }: OTPFormProps) => {
       {state.error && <p className="text-red-500 text-xs">{state.error}</p>}
       <SubmitButton title="Verify code" />
       {/* For testing */}
-      {showOTP && otpCode && (
+      {showOTP && otpCode ? (
         <div className="mt-10 text-gray-500 text-sm transition-opacity duration-500 ease-in-out">
           Test code: <span className="font-bold">{otpCode}</span>
         </div>
+      ) : (
+        <Spinner size={24} />
       )}
       <input type="hidden" name="serverOtp" value={otpCode ?? ""} />
     </form>

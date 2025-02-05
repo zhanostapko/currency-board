@@ -1,6 +1,6 @@
 "use client";
 import { BalanceItem } from "@/types/BalanceTableTypes";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./Shared/Button";
 import Input from "./Shared/Input";
 import DeleteModal from "./DeleteModal";
@@ -23,6 +23,22 @@ const BalancesTableContent = ({
   const [balances, setBalances] = useState<BalanceItem[]>(data);
   const [showModal, setShowModal] = useState(false);
   const [currencyToDelete, setCurrencyToDelete] = useState<string>("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+
+      if (width < 640) setColumnCount(1);
+      else if (width < 1024) setColumnCount(2);
+      else if (width < 1280) setColumnCount(3);
+      else setColumnCount(4);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const increment = () => setColumnCount((prev) => Math.min(5, prev + 1));
   const decrement = () => setColumnCount((prev) => Math.max(1, prev - 1));
@@ -79,7 +95,7 @@ const BalancesTableContent = ({
               disabled={columnCount >= 5 || !!error}
               onClick={increment}
             >
-              + Expand
+              + Increase
             </Button>
             <Button
               className="px-5 py-2.5 text-sm bg-red-600 text-white rounded-md hover:bg-red-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"

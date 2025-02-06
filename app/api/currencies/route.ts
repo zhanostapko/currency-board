@@ -1,4 +1,5 @@
-import { currencyMap } from "@/data/currency";
+import { NextResponse } from "next/server";
+import { mapCurrencies } from "@/utils/mapCurrency";
 
 export async function GET() {
   try {
@@ -7,22 +8,20 @@ export async function GET() {
     });
 
     if (!response.ok) {
-      return Response.json(
+      return NextResponse.json(
         { statusText: "Failed to fetch data from API" },
         { status: 500 }
       );
     }
 
     const data = await response.json();
+    const mappedData = mapCurrencies(data);
 
-    const mappedData = data.map((item: { id: string; amount: string }) => ({
-      id: item.id,
-      currency: currencyMap[item.id] || "Unknown",
-      amount: item.amount,
-    }));
-
-    return Response.json(mappedData, { status: 200 });
+    return NextResponse.json(mappedData, { status: 200 });
   } catch (error) {
-    return Response.json({ error: (error as Error).message }, { status: 500 });
+    return NextResponse.json(
+      { error: (error as Error).message },
+      { status: 500 }
+    );
   }
 }

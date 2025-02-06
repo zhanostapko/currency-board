@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteModal Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-6"
+  >
+    <div
+      class="max-w-lg w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center"
+    >
+      <h2
+        class="text-2xl font-bold text-gray-900 mb-4"
+      >
+        Confirm Deletion
+      </h2>
+      <p
+        class="text-gray-600 mb-6"
+      >
+        Are you sure you want to delete 
+        <strong>
+          USD
+        </strong>
+         from the list?
+      </p>
+      <div
+        class="flex justify-center gap-4"
+      >
+        <button
+          class="px-5 py-2.5 text-sm bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+        >
+          Delete
+        </button>
+        <button
+          class="px-5 py-2.5 text-sm border border-gray-300 bg-white text-gray-700 rounded-md hover:bg-gray-100 transition"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DeleteModal Component renders modal with correct currency 1`] = `
+<DocumentFragment>
+  <div
+    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-6"
+  >
+    <div
+      class="max-w-lg w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center"
+    >
+      <h2
+        class="text-2xl font-bold text-gray-900 mb-4"
+      >
+        Confirm Deletion
+      </h2>
+      <p
+        class="text-gray-600 mb-6"
+      >
+        Are you sure you want to delete 
+        <strong>
+          USD
+        </strong>
+         from the list?
+      </p>
+      <div
+        class="flex justify-center gap-4"
+      >
+        <button
+          class="px-5 py-2.5 text-sm bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+        >
+          Delete
+        </button>
+        <button
+          class="px-5 py-2.5 text-sm border border-gray-300 bg-white text-gray-700 rounded-md hover:bg-gray-100 transition"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

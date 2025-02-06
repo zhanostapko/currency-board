@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BalancesTable Component calls showDeleteModal on delete button click 1`] = `
+<DocumentFragment>
+   
+  <div
+    class="w-full overflow-x-auto"
+  >
+    <table
+      class="w-full border-collapse rounded-lg shadow-sm table-fixed"
+    >
+      <thead>
+        <tr
+          class="bg-gray-200 text-gray-900 text-lg font-semibold"
+        >
+          <th
+            class="px-6 py-4 text-left"
+          >
+            Currency
+          </th>
+          <th
+            class="px-6 py-4 text-right"
+          >
+            Balance
+          </th>
+          <th
+            class="px-6 py-4 text-left"
+          >
+            Currency
+          </th>
+          <th
+            class="px-6 py-4 text-right"
+          >
+            Balance
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="even:bg-gray-100 hover:bg-gray-200 transition"
+        >
+          <td
+            class="px-6 py-4 text-gray-700 font-medium text-left"
+          >
+            USD
+          </td>
+          <td
+            class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+          >
+            100
+            <button
+              class="text-red-500 hover:text-red-700 transition"
+            >
+              <img
+                alt="Delete"
+                data-nimg="1"
+                decoding="async"
+                height="14"
+                loading="lazy"
+                src="trashIcon.svg"
+                style="color: transparent;"
+                width="14"
+              />
+            </button>
+          </td>
+          <td
+            class="px-6 py-4 text-gray-700 font-medium text-left"
+          >
+            EUR
+          </td>
+          <td
+            class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+          >
+            200
+            <button
+              class="text-red-500 hover:text-red-700 transition"
+            >
+              <img
+                alt="Delete"
+                data-nimg="1"
+                decoding="async"
+                height="14"
+                loading="lazy"
+                src="trashIcon.svg"
+                style="color: transparent;"
+                width="14"
+              />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BalancesTable Component renders empty state when no data is provided 1`] = `
+<DocumentFragment>
+   
+  <div
+    class="w-full overflow-x-auto"
+  >
+    <table
+      class="w-full border-collapse rounded-lg shadow-sm table-fixed"
+    >
+      <thead>
+        <tr
+          class="bg-gray-200 text-gray-900 text-lg font-semibold"
+        >
+          <th
+            class="px-6 py-4 text-left"
+          >
+            Currency
+          </th>
+          <th
+            class="px-6 py-4 text-right"
+          >
+            Balance
+          </th>
+          <th
+            class="px-6 py-4 text-left"
+          >
+            Currency
+          </th>
+          <th
+            class="px-6 py-4 text-right"
+          >
+            Balance
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            class="px-6 py-4 text-center text-gray-500"
+            colspan="4"
+          >
+            🔎 No balances found for your search.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BalancesTable Component renders table with data 1`] = `
+<DocumentFragment>
+   
+  <div
+    class="w-full overflow-x-auto"
+  >
+    <table
+      class="w-full border-collapse rounded-lg shadow-sm table-fixed"
+    >
+      <thead>
+        <tr
+          class="bg-gray-200 text-gray-900 text-lg font-semibold"
+        >
+          <th
+            class="px-6 py-4 text-left"
+          >
+            Currency
+          </th>
+          <th
+            class="px-6 py-4 text-right"
+          >
+            Balance
+          </th>
+          <th
+            class="px-6 py-4 text-left"
+          >
+            Currency
+          </th>
+          <th
+            class="px-6 py-4 text-right"
+          >
+            Balance
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="even:bg-gray-100 hover:bg-gray-200 transition"
+        >
+          <td
+            class="px-6 py-4 text-gray-700 font-medium text-left"
+          >
+            USD
+          </td>
+          <td
+            class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+          >
+            100
+            <button
+              class="text-red-500 hover:text-red-700 transition"
+            >
+              <img
+                alt="Delete"
+                data-nimg="1"
+                decoding="async"
+                height="14"
+                loading="lazy"
+                src="trashIcon.svg"
+                style="color: transparent;"
+                width="14"
+              />
+            </button>
+          </td>
+          <td
+            class="px-6 py-4 text-gray-700 font-medium text-left"
+          >
+            EUR
+          </td>
+          <td
+            class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+          >
+            200
+            <button
+              class="text-red-500 hover:text-red-700 transition"
+            >
+              <img
+                alt="Delete"
+                data-nimg="1"
+                decoding="async"
+                height="14"
+                loading="lazy"
+                src="trashIcon.svg"
+                style="color: transparent;"
+                width="14"
+              />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BalancesTable Component shows error message when error prop is passed 1`] = `
+<DocumentFragment>
+   
+  <div
+    class="w-full border border-red-500 bg-red-50 text-red-700 text-center font-medium p-4 rounded-md"
+  >
+    ❌ Failed to fetch data. Please try again later.
+  </div>
+</DocumentFragment>
+`;

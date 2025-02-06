@@ -5,9 +5,17 @@ import { verifyOtpAction } from "@/app/actions/verifyOtp";
 import SubmitButton from "./SubmitButton";
 import Spinner from "./Spinner";
 
-type OTPFormProps = { email: string | null; otpCode: number | null };
+type OTPFormProps = {
+  email: string | null;
+  otpCode: number | null;
+  disableValidation?: boolean;
+};
 
-const OTPForm = ({ email, otpCode }: OTPFormProps) => {
+const OTPForm = ({
+  email,
+  otpCode,
+  disableValidation = false,
+}: OTPFormProps) => {
   const [state, formAction] = useActionState(verifyOtpAction, {
     error: null,
     step: "otp",
@@ -25,12 +33,14 @@ const OTPForm = ({ email, otpCode }: OTPFormProps) => {
 
   return (
     <form
+      noValidate={disableValidation}
       autoComplete="off"
       className="flex flex-col gap-4"
       action={formAction}
     >
       <p className="text-gray-500 text-sm">Enter the OTP sent to {email}</p>
       <Input
+        id="otpCode"
         label="OTP Code"
         type="text"
         name="enteredOtp"

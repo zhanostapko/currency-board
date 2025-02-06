@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login form renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center "
+  >
+    <div
+      class="bg-white p-10 rounded-xl shadow-xl w-96 text-center"
+    >
+      <h2
+        class="text-3xl font-bold text-gray-900 mb-2"
+      >
+        Hello Again!
+      </h2>
+      <p
+        class="text-gray-600 mb-6"
+      >
+        Welcome Back
+      </p>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+        class="flex flex-col gap-3 mb-4"
+      >
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="email"
+          name="email"
+          required=""
+          type="email"
+          value=""
+        />
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="password"
+          name="password"
+          required=""
+          type="password"
+        />
+        <button
+          class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+          type="submit"
+        >
+          Sign In
+        </button>
+      </form>
+      <a
+        class="text-blue-500 mt-6 text-sm cursor-pointer hover:underline"
+        href="/register"
+      >
+        Don't have an account? Sign up
+      </a>
+      <p
+        class="text-gray-500 mt-2 text-sm cursor-pointer hover:underline"
+      >
+        Forgot Password
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Shows error message for incorrect email 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center "
+  >
+    <div
+      class="bg-white p-10 rounded-xl shadow-xl w-96 text-center"
+    >
+      <h2
+        class="text-3xl font-bold text-gray-900 mb-2"
+      >
+        Hello Again!
+      </h2>
+      <p
+        class="text-gray-600 mb-6"
+      >
+        Welcome Back
+      </p>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+        class="flex flex-col gap-3 mb-4"
+      >
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="email"
+          name="email"
+          required=""
+          type="email"
+          value="incorrect@email.com"
+        />
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="password"
+          name="password"
+          required=""
+          type="password"
+        />
+        <p
+          class="text-red-500 text-xs"
+        >
+          Invalid email or password
+        </p>
+        <button
+          class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+          type="submit"
+        >
+          Sign In
+        </button>
+      </form>
+      <a
+        class="text-blue-500 mt-6 text-sm cursor-pointer hover:underline"
+        href="/register"
+      >
+        Don't have an account? Sign up
+      </a>
+      <p
+        class="text-gray-500 mt-2 text-sm cursor-pointer hover:underline"
+      >
+        Forgot Password
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Shows error message for incorrect password 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center "
+  >
+    <div
+      class="bg-white p-10 rounded-xl shadow-xl w-96 text-center"
+    >
+      <h2
+        class="text-3xl font-bold text-gray-900 mb-2"
+      >
+        Hello Again!
+      </h2>
+      <p
+        class="text-gray-600 mb-6"
+      >
+        Welcome Back
+      </p>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+        class="flex flex-col gap-3 mb-4"
+      >
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="email"
+          name="email"
+          required=""
+          type="email"
+          value="test@example.com"
+        />
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="password"
+          name="password"
+          required=""
+          type="password"
+        />
+        <p
+          class="text-red-500 text-xs"
+        >
+          Invalid email or password
+        </p>
+        <button
+          class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+          type="submit"
+        >
+          Sign In
+        </button>
+      </form>
+      <a
+        class="text-blue-500 mt-6 text-sm cursor-pointer hover:underline"
+        href="/register"
+      >
+        Don't have an account? Sign up
+      </a>
+      <p
+        class="text-gray-500 mt-2 text-sm cursor-pointer hover:underline"
+      >
+        Forgot Password
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Shows error message for invalid email format 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center "
+  >
+    <div
+      class="bg-white p-10 rounded-xl shadow-xl w-96 text-center"
+    >
+      <h2
+        class="text-3xl font-bold text-gray-900 mb-2"
+      >
+        Hello Again!
+      </h2>
+      <p
+        class="text-gray-600 mb-6"
+      >
+        Welcome Back
+      </p>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+        class="flex flex-col gap-3 mb-4"
+        novalidate=""
+      >
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="email"
+        >
+          Email Address
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="email"
+          name="email"
+          required=""
+          type="email"
+          value="invalid-email"
+        />
+        <label
+          class="text-gray-400 text-left text-sm font-medium"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+          id="password"
+          name="password"
+          required=""
+          type="password"
+        />
+        <p
+          class="text-red-500 text-xs"
+        >
+          Invalid email format
+        </p>
+        <button
+          class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+          type="submit"
+        >
+          Sign In
+        </button>
+      </form>
+      <a
+        class="text-blue-500 mt-6 text-sm cursor-pointer hover:underline"
+        href="/register"
+      >
+        Don't have an account? Sign up
+      </a>
+      <p
+        class="text-gray-500 mt-2 text-sm cursor-pointer hover:underline"
+      >
+        Forgot Password
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

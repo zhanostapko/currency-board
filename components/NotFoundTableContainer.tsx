@@ -1,13 +1,13 @@
 import { GET } from "@/app/api/not-found/route";
 import React from "react";
-import BalancesTable from "./BalancesTable";
+import BalancesTableContent from "./BalancesTableContent";
 
 const NotFoundTableContainer = async () => {
   const response = await GET();
 
   if (!response.ok) {
     return (
-      <BalancesTable
+      <BalancesTableContent
         title="Error Table"
         error={`Error: ${response.status} ${response.statusText}`}
       />
@@ -16,7 +16,7 @@ const NotFoundTableContainer = async () => {
 
   const data = await response.json();
 
-  return <BalancesTable title="Error Table" data={data} />;
+  return <BalancesTableContent title="Error Table" data={data} />;
 };
 
 export default NotFoundTableContainer;

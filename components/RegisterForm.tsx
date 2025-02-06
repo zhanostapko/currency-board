@@ -34,16 +34,28 @@ const RegisterForm = () => {
           In...
         </p>
       ) : (
-        <form className="flex flex-col gap-4" action={formAction}>
+        <form
+          data-testid="register-form"
+          className="flex flex-col gap-4"
+          action={formAction}
+        >
           <Input
+            id="email"
             label="Email"
             type="email"
             name="email"
             required
             defaultValue={state.email}
           />
-          <Input label="Password" type="password" name="password" required />
           <Input
+            id="password"
+            label="Password"
+            type="password"
+            name="password"
+            required
+          />
+          <Input
+            id="confirmPassword"
             label="Confirm Password"
             type="password"
             name="confirmPassword"

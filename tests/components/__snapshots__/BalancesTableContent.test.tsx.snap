@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BalancesTableContent Component renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="max-w-7xl mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full text-center"
+  >
+    <h2
+      class="text-3xl font-bold text-gray-900 mb-6"
+    >
+      Balances
+    </h2>
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 mb-6"
+    >
+      <input
+        class="w-64 px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700 placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition disabled:bg-gray-100 disabled:cursor-not-allowed disabled:hover:bg-gray-100"
+        placeholder="Search"
+        value=""
+      />
+      <div
+        class="flex gap-4"
+      >
+        <button
+          class="px-5 py-2.5 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+        >
+          + Increase
+        </button>
+        <button
+          class="px-5 py-2.5 text-sm bg-red-600 text-white rounded-md hover:bg-red-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+        >
+          - Reduce
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="w-full overflow-x-auto"
+    >
+      <table
+        class="w-full border-collapse rounded-lg shadow-sm table-fixed"
+      >
+        <thead>
+          <tr
+            class="bg-gray-200 text-gray-900 text-lg font-semibold"
+          >
+            <th
+              class="px-6 py-4 text-left"
+            >
+              Currency
+            </th>
+            <th
+              class="px-6 py-4 text-right"
+            >
+              Balance
+            </th>
+            <th
+              class="px-6 py-4 text-left"
+            >
+              Currency
+            </th>
+            <th
+              class="px-6 py-4 text-right"
+            >
+              Balance
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="even:bg-gray-100 hover:bg-gray-200 transition"
+          >
+            <td
+              class="px-6 py-4 text-gray-700 font-medium text-left"
+            >
+              USD
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+            >
+              100
+              <button
+                class="text-red-500 hover:text-red-700 transition"
+              >
+                <img
+                  alt="Delete"
+                  data-nimg="1"
+                  decoding="async"
+                  height="14"
+                  loading="lazy"
+                  src="trashIcon.svg"
+                  style="color: transparent;"
+                  width="14"
+                />
+              </button>
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium text-left"
+            >
+              EUR
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+            >
+              200
+              <button
+                class="text-red-500 hover:text-red-700 transition"
+              >
+                <img
+                  alt="Delete"
+                  data-nimg="1"
+                  decoding="async"
+                  height="14"
+                  loading="lazy"
+                  src="trashIcon.svg"
+                  style="color: transparent;"
+                  width="14"
+                />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BalancesTableContent Component renders error message when error is passed 1`] = `
+<DocumentFragment>
+  <div
+    class="max-w-7xl mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full text-center"
+  >
+    <h2
+      class="text-3xl font-bold text-gray-900 mb-6"
+    >
+      Balances
+    </h2>
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 mb-6"
+    >
+      <input
+        class="w-64 px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700 placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition disabled:bg-gray-100 disabled:cursor-not-allowed disabled:hover:bg-gray-100"
+        disabled=""
+        placeholder="Search"
+        value=""
+      />
+      <div
+        class="flex gap-4"
+      >
+        <button
+          class="px-5 py-2.5 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+          disabled=""
+        >
+          + Increase
+        </button>
+        <button
+          class="px-5 py-2.5 text-sm bg-red-600 text-white rounded-md hover:bg-red-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+          disabled=""
+        >
+          - Reduce
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="w-full border border-red-500 bg-red-50 text-red-700 text-center font-medium p-4 rounded-md"
+    >
+      ❌ Failed to fetch data. Please try again later.
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BalancesTableContent Component renders table with filtered data 1`] = `
+<DocumentFragment>
+  <div
+    class="max-w-7xl mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full text-center"
+  >
+    <h2
+      class="text-3xl font-bold text-gray-900 mb-6"
+    >
+      Balances
+    </h2>
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 mb-6"
+    >
+      <input
+        class="w-64 px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700 placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition disabled:bg-gray-100 disabled:cursor-not-allowed disabled:hover:bg-gray-100"
+        placeholder="Search"
+        value=""
+      />
+      <div
+        class="flex gap-4"
+      >
+        <button
+          class="px-5 py-2.5 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+        >
+          + Increase
+        </button>
+        <button
+          class="px-5 py-2.5 text-sm bg-red-600 text-white rounded-md hover:bg-red-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+        >
+          - Reduce
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="w-full overflow-x-auto"
+    >
+      <table
+        class="w-full border-collapse rounded-lg shadow-sm table-fixed"
+      >
+        <thead>
+          <tr
+            class="bg-gray-200 text-gray-900 text-lg font-semibold"
+          >
+            <th
+              class="px-6 py-4 text-left"
+            >
+              Currency
+            </th>
+            <th
+              class="px-6 py-4 text-right"
+            >
+              Balance
+            </th>
+            <th
+              class="px-6 py-4 text-left"
+            >
+              Currency
+            </th>
+            <th
+              class="px-6 py-4 text-right"
+            >
+              Balance
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="even:bg-gray-100 hover:bg-gray-200 transition"
+          >
+            <td
+              class="px-6 py-4 text-gray-700 font-medium text-left"
+            >
+              USD
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+            >
+              100
+              <button
+                class="text-red-500 hover:text-red-700 transition"
+              >
+                <img
+                  alt="Delete"
+                  data-nimg="1"
+                  decoding="async"
+                  height="14"
+                  loading="lazy"
+                  src="trashIcon.svg"
+                  style="color: transparent;"
+                  width="14"
+                />
+              </button>
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium text-left"
+            >
+              EUR
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+            >
+              200
+              <button
+                class="text-red-500 hover:text-red-700 transition"
+              >
+                <img
+                  alt="Delete"
+                  data-nimg="1"
+                  decoding="async"
+                  height="14"
+                  loading="lazy"
+                  src="trashIcon.svg"
+                  style="color: transparent;"
+                  width="14"
+                />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BalancesTableContent Component shows delete modal when showModal is true 1`] = `
+<DocumentFragment>
+  <div
+    class="max-w-7xl mx-auto bg-white p-6 rounded-xl shadow-lg border border-gray-200 w-full text-center"
+  >
+    <h2
+      class="text-3xl font-bold text-gray-900 mb-6"
+    >
+      Balances
+    </h2>
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 mb-6"
+    >
+      <input
+        class="w-64 px-4 py-2 border border-gray-300 rounded-md bg-white text-gray-700 placeholder-gray-500 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition disabled:bg-gray-100 disabled:cursor-not-allowed disabled:hover:bg-gray-100"
+        placeholder="Search"
+        value=""
+      />
+      <div
+        class="flex gap-4"
+      >
+        <button
+          class="px-5 py-2.5 text-sm bg-blue-600 text-white rounded-md hover:bg-blue-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+        >
+          + Increase
+        </button>
+        <button
+          class="px-5 py-2.5 text-sm bg-red-600 text-white rounded-md hover:bg-red-700 transition flex items-center gap-2 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:hover:bg-gray-400"
+        >
+          - Reduce
+        </button>
+      </div>
+    </div>
+     
+    <div
+      class="w-full overflow-x-auto"
+    >
+      <table
+        class="w-full border-collapse rounded-lg shadow-sm table-fixed"
+      >
+        <thead>
+          <tr
+            class="bg-gray-200 text-gray-900 text-lg font-semibold"
+          >
+            <th
+              class="px-6 py-4 text-left"
+            >
+              Currency
+            </th>
+            <th
+              class="px-6 py-4 text-right"
+            >
+              Balance
+            </th>
+            <th
+              class="px-6 py-4 text-left"
+            >
+              Currency
+            </th>
+            <th
+              class="px-6 py-4 text-right"
+            >
+              Balance
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="even:bg-gray-100 hover:bg-gray-200 transition"
+          >
+            <td
+              class="px-6 py-4 text-gray-700 font-medium text-left"
+            >
+              USD
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+            >
+              100
+              <button
+                class="text-red-500 hover:text-red-700 transition"
+              >
+                <img
+                  alt="Delete"
+                  data-nimg="1"
+                  decoding="async"
+                  height="14"
+                  loading="lazy"
+                  src="trashIcon.svg"
+                  style="color: transparent;"
+                  width="14"
+                />
+              </button>
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium text-left"
+            >
+              EUR
+            </td>
+            <td
+              class="px-6 py-4 text-gray-700 font-medium flex justify-end items-center gap-2"
+            >
+              200
+              <button
+                class="text-red-500 hover:text-red-700 transition"
+              >
+                <img
+                  alt="Delete"
+                  data-nimg="1"
+                  decoding="async"
+                  height="14"
+                  loading="lazy"
+                  src="trashIcon.svg"
+                  style="color: transparent;"
+                  width="14"
+                />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-6"
+    >
+      <div
+        class="max-w-lg w-full bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center"
+      >
+        <h2
+          class="text-2xl font-bold text-gray-900 mb-4"
+        >
+          Confirm Deletion
+        </h2>
+        <p
+          class="text-gray-600 mb-6"
+        >
+          Are you sure you want to delete 
+          <strong>
+            USD
+          </strong>
+           from the list?
+        </p>
+        <div
+          class="flex justify-center gap-4"
+        >
+          <button
+            class="px-5 py-2.5 text-sm bg-red-500 text-white rounded-md hover:bg-red-600 transition"
+          >
+            Delete
+          </button>
+          <button
+            class="px-5 py-2.5 text-sm border border-gray-300 bg-white text-gray-700 rounded-md hover:bg-gray-100 transition"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -3,3 +3,9 @@ export type BalanceItem = {
   currency: string;
   amount: string;
 };
+
+export type BalancesTableProps = {
+  data: BalanceItem[];
+  columnCount: number;
+  showDeleteModal: (currency: string) => void;
+};

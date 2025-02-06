@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OTPForm Component allows entering OTP and submits form 1`] = `
+<DocumentFragment>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    autocomplete="off"
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="text-gray-500 text-sm"
+    >
+      Enter the OTP sent to test@example.com
+    </p>
+    <label
+      class="text-gray-400 text-left text-sm font-medium"
+      for="otpCode"
+    >
+      OTP Code
+    </label>
+    <input
+      class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+      id="otpCode"
+      maxlength="6"
+      name="enteredOtp"
+      required=""
+      type="text"
+    />
+    <p
+      class="text-red-500 text-xs"
+    >
+      Invalid OTP
+    </p>
+    <button
+      class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+      type="submit"
+    >
+      Verify code
+    </button>
+    <div
+      class="flex justify-center items-center "
+      data-testid="spinner"
+    >
+      <div
+        class=" border-4 border-blue-500 border-t-transparent rounded-full animate-spin"
+        style="width: 24px; height: 24px; border-width: 3px;"
+      />
+    </div>
+    <input
+      name="serverOtp"
+      type="hidden"
+      value="123456"
+    />
+  </form>
+</DocumentFragment>
+`;
+
+exports[`OTPForm Component displays test OTP after 3 seconds 1`] = `
+<DocumentFragment>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    autocomplete="off"
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="text-gray-500 text-sm"
+    >
+      Enter the OTP sent to test@example.com
+    </p>
+    <label
+      class="text-gray-400 text-left text-sm font-medium"
+      for="otpCode"
+    >
+      OTP Code
+    </label>
+    <input
+      class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+      id="otpCode"
+      maxlength="6"
+      name="enteredOtp"
+      required=""
+      type="text"
+    />
+    <button
+      class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+      type="submit"
+    >
+      Verify code
+    </button>
+    <div
+      class="mt-10 text-gray-500 text-sm transition-opacity duration-500 ease-in-out"
+    >
+      Test code: 
+      <span
+        class="font-bold"
+      >
+        123456
+      </span>
+    </div>
+    <input
+      name="serverOtp"
+      type="hidden"
+      value="123456"
+    />
+  </form>
+</DocumentFragment>
+`;
+
+exports[`OTPForm Component renders correctly with email 1`] = `
+<DocumentFragment>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    autocomplete="off"
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="text-gray-500 text-sm"
+    >
+      Enter the OTP sent to test@example.com
+    </p>
+    <label
+      class="text-gray-400 text-left text-sm font-medium"
+      for="otpCode"
+    >
+      OTP Code
+    </label>
+    <input
+      class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+      id="otpCode"
+      maxlength="6"
+      name="enteredOtp"
+      required=""
+      type="text"
+    />
+    <button
+      class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+      type="submit"
+    >
+      Verify code
+    </button>
+    <div
+      class="flex justify-center items-center "
+      data-testid="spinner"
+    >
+      <div
+        class=" border-4 border-blue-500 border-t-transparent rounded-full animate-spin"
+        style="width: 24px; height: 24px; border-width: 3px;"
+      />
+    </div>
+    <input
+      name="serverOtp"
+      type="hidden"
+      value="123456"
+    />
+  </form>
+</DocumentFragment>
+`;
+
+exports[`OTPForm Component shows error message when OTP is incorrect 1`] = `
+<DocumentFragment>
+  <form
+    action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+    autocomplete="off"
+    class="flex flex-col gap-4"
+  >
+    <p
+      class="text-gray-500 text-sm"
+    >
+      Enter the OTP sent to test@example.com
+    </p>
+    <label
+      class="text-gray-400 text-left text-sm font-medium"
+      for="otpCode"
+    >
+      OTP Code
+    </label>
+    <input
+      class="text-gray-600 w-full outline-none relative border rounded-lg flex items-center p-3  border-gray-300"
+      id="otpCode"
+      maxlength="6"
+      name="enteredOtp"
+      required=""
+      type="text"
+    />
+    <p
+      class="text-red-500 text-xs"
+    >
+      Invalid OTP
+    </p>
+    <button
+      class="bg-blue-600 text-white py-3 rounded-lg text-center hover:bg-blue-700 transition"
+      type="submit"
+    >
+      Verify code
+    </button>
+    <div
+      class="flex justify-center items-center "
+      data-testid="spinner"
+    >
+      <div
+        class=" border-4 border-blue-500 border-t-transparent rounded-full animate-spin"
+        style="width: 24px; height: 24px; border-width: 3px;"
+      />
+    </div>
+    <input
+      name="serverOtp"
+      type="hidden"
+      value="123456"
+    />
+  </form>
+</DocumentFragment>
+`;

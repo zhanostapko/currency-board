@@ -8,7 +8,11 @@ import AuthFormWrapper from "./AuthWrapper";
 import OTPForm from "./OTPForm";
 import Link from "next/link";
 
-const LoginForm = () => {
+type LoginFormProps = {
+  disableValidation?: boolean;
+};
+
+const LoginForm = ({ disableValidation = false }: LoginFormProps) => {
   const [state, formAction] = useActionState(loginAction, {
     error: null,
     step: "login",
@@ -27,15 +31,26 @@ const LoginForm = () => {
         </>
       ) : (
         <>
-          <form className="flex flex-col gap-3 mb-4" action={formAction}>
+          <form
+            className="flex flex-col gap-3 mb-4"
+            action={formAction}
+            noValidate={disableValidation}
+          >
             <Input
+              id="email"
               label="Email Address"
               type="email"
               name="email"
               required
               defaultValue={state.email}
             />
-            <Input label="Password" type="password" name="password" required />
+            <Input
+              id="password"
+              label="Password"
+              type="password"
+              name="password"
+              required
+            />
             {state.error && (
               <p className="text-red-500 text-xs">{state.error}</p>
             )}

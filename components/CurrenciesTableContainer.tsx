@@ -1,13 +1,13 @@
 import React from "react";
-import BalancesTable from "./BalancesTable";
 import { GET } from "@/app/api/currencies/route";
+import BalancesTableContent from "./BalancesTableContent";
 
 const CurrenciesTableContainer = async () => {
   const response = await GET();
 
   if (!response.ok) {
     return (
-      <BalancesTable
+      <BalancesTableContent
         title="Currencies Table"
         error={`Error: ${response.status} ${response.statusText}`}
       />
@@ -16,7 +16,7 @@ const CurrenciesTableContainer = async () => {
 
   const data = await response?.json();
 
-  return <BalancesTable title="Currencies Table" data={data} />;
+  return <BalancesTableContent title="Currencies Table" data={data} />;
 };
 
 export default CurrenciesTableContainer;
